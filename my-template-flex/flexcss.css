@@ -1,0 +1,37 @@
+.flex-container {
+    background-color: lightblue;
+    margin-bottom: 10px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.flex-item {
+    box-sizing: border-box;
+    border: 1px solid deepskyblue;
+    padding: 10px;
+    flex: 1 1 100px;
+}
+
+.grid-container {
+    border: 4px solid black;
+    display: grid;
+    grid-template-columns: 200px repeat(2, 1fr);
+    grid-template-rows: 100px 100px;
+}
+.grid-item {
+    border: 2px solid mediumaquamarine;
+    padding: 10px;
+}
+.grid-container01 {
+    border: 4px solid black;
+    display: grid;
+    grid-auto-rows: 200px;
+    grid-auto-columns: 50px;
+}
+.grid-item1 {
+    border: 2px solid maroon;
+    padding: 10px;
+}
+.example {
+    grid-column: 4/6;
+}

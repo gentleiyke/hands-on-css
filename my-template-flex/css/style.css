@@ -1,0 +1,173 @@
+/* Fonts styles
+----------------------------------*/
+@font-face {
+    font-family: 'iOS One';
+    src: url(../font/Caveat-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: 'iOS Two';
+    src: url(../font/VT323-Regular.ttf);
+}
+@font-face {
+    font-family: 'iOS Three';
+    src: url(../font/Pangolin-Regular.ttf);
+}
+@font-face {
+    font-family: 'iOS Four';
+    src: url(../font/Montserrat-VariableFont_wght.ttf);
+}
+/* Global styles
+----------------------------------*/
+.html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+body {
+    color: #343434;
+    margin: 0;
+    padding: 0;
+    font-family: 'iOS Four', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+img {
+    width: 300px;
+}
+h1, h2 {
+    font-family: 'iOS One', sans-serif;
+    font-weight: 400;
+    margin: 0;
+}
+a {
+    color: #ffe66d;
+}
+a:hover {
+    text-decoration: none;
+}
+h1 {
+    font-size: 100px;
+    line-height: 1;
+}
+h2 {
+    /* margin: 0; */
+    font-size: 45px;
+}
+.content-wrap {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+.item-details h3 {
+    margin-bottom: 0;
+}
+.item-details h3 + p {
+    font-style: italic;
+}
+.item-details h3 ~ p {
+    margin: 0;
+}
+.divider > section {
+    border-bottom: 1px dashed #343434;
+    padding: 25px 0;
+}
+.divider > section:last-of-type {
+    border-bottom: none;
+}
+/* Profile styles
+----------------------------------*/
+header {
+    background: #2F3051;
+    color: #f7fff7;
+}
+/* Project styles
+----------------------------------*/
+.projects {
+    background: #f7fff7;
+}
+.projects a {
+    color: #2f3061;
+} 
+.projects .btn {
+    text-decoration: none;
+    color: #f7fff7;
+    background: #2f3061;
+    padding: 8px;
+    border-radius: 4px;
+    display: inline-block;
+}
+.projects .btn:hover {
+    background: rgba(47, 48, 97, 80%);
+}
+.project-item {
+    overflow: hidden;
+}
+.project-item h3 {
+    margin-top: 10px;
+}
+
+/* Work styles
+----------------------------------*/
+.work-experience {
+    background: #a1c6d7;
+}
+/* Education styles
+----------------------------------*/
+.education {
+    background-image: url(../images/edu-img.jpg);
+    background-size: cover;
+    background-position: top right;
+    padding-bottom: 100px;
+}
+.education p {
+    width: 60%;
+}
+/* Contact styles
+----------------------------------*/
+footer {
+    background: #343434;
+    color: #f7fff7;
+}
+.contact-list {
+    list-style-type: none;
+    padding: 0;
+}
+.contact-list a {
+    display: inline-block;
+    padding: 15px;
+}
+/* Responsive styles
+----------------------------------*/
+@media screen and (min-width: 750px) {
+    header, footer {
+        text-align: center;
+    }
+    .project-item img {
+        float: left;
+        margin: 20px;
+    }
+    .job-item {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 10px;
+    }
+    .contact-list {
+        display: flex;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 749px) {
+    h1 {
+        font-size: 70px;
+        line-height: 0.9;
+        margin-bottom: 20px;
+    }
+    h2 {
+        line-height: 1;
+    }
+    .contact-list a {
+        padding: 5px;
+    }
+}
